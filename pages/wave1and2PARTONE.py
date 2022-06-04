@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-import streamlit_theme as stt
+
 def wave1_and_wave2():
     df = pd.read_csv('cleaneddata2.csv')
     select = st.sidebar.selectbox("EXPLORATORY DATA ANALYSIS WAVE1 AND WAVE2",['NO OF COMPANY IN EACH SECTOR',
