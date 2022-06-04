@@ -4,8 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-import streamlit_theme as stt
-import streamlit_theme as stt
 def wave1():
     df = pd.read_csv('cleaneddata2.csv')
     select = st.sidebar.selectbox("EXPLORATORY DATA ANALYSIS WAVE1 2008",['TOTAL NUMBER OF STAFFS IN YEAR 2005 BY SECTORS ACORDING TO THEIR AREA OF SERVICES',
