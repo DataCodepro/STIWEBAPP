@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-import streamlit_theme as stt
+
 
 def wave2():
     df = pd.read_csv('cleaneddata2.csv')
