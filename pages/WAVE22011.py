@@ -20,7 +20,7 @@ def wave2():
         fig.update_traces(textinfo='label+percent entry')
         fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),paper_bgcolor="#4233FF",)
         st.plotly_chart(fig)
-    elif select == 'TOTAL NUMBER OF STAFF IN YEAR 2009 BY SECTORS ACORDING TO THEIR AREA OF SERVICE':
+    elif select == 'TOTAL NUMBER OF STAFF IN YEAR 2009 BY SECTORS ACCORDING TO THEIR AREA OF SERVICE':
                 st.subheader('TOTAL NUMBER OF STAFF IN YEAR 2009 BY SECTORS ACORDING TO THEIR AREA OF SERVICE')
                 fig = px.sunburst(df, path=['service', 'sector'], values='totalstaff09',width=800, height=500)
                 fig.update_traces(textinfo='label+percent entry')
