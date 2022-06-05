@@ -8,7 +8,7 @@ import plotly.express as px
 def wave1_and_wave2():
     df = pd.read_csv('cleaneddata2.csv')
     select = st.sidebar.selectbox("EXPLORATORY DATA ANALYSIS WAVE1 AND WAVE2",['NO OF COMPANY IN EACH SECTOR',
-        'PERCENTAGE RATE OF EACH SECTOR','GROUPING OF SECTORS ACORDING TO THEIR AREA OF SERVICES',
+        'PERCENTAGE RATE OF EACH SECTOR','GROUPING OF SECTORS ACORDING TO THEIR AREA OF SERVICE',
         'SECTORS AND THEIR INFORMATION SOURCE - INTERNAL',
         'SECTORS AND THEIR INFORMATION SOURCE - SUPPLIERS','SECTORS AND THEIR INFORMATION SOURCE -CUSTORMERS',
         'SECTORS AND THEIR INFORMATION SOURCE -COMPETITORS','SECTORS AND THEIR INFORMATION SOURCE -CONSULTANTS, COMMERCIAL LABS OR PRIVATE R&D INSTITUTES',
@@ -35,7 +35,7 @@ def wave1_and_wave2():
             paper_bgcolor="#4233FF",)
                 fig.update_traces(textposition='inside', textinfo='percent+label')
                 st.plotly_chart(fig)
-    elif select == 'GROUPING OF SECTORS ACORDING TO THEIR AREA OF SERVICES':
+    elif select == 'GROUPING OF SECTORS ACORDING TO THEIR AREA OF SERVICE':
                 st.subheader('GROUPING OF SECTORS ACORDING TO THEIR AREA OF SERVICES')
                 fig = px.histogram(df, x="sector", color="service",width=800, height=600)
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
