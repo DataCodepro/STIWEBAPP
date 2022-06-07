@@ -18,21 +18,21 @@ def wave2():
         st.subheader('TOTAL NUMBER OF STAFF IN YEAR 2008 BY SECTORS ACCORDING TO THEIR AREA OF SERVICE',)
         fig = px.sunburst(df, path=['service', 'sector'], values='totalstaff08',width=800, height=500)
         fig.update_traces(textinfo='label+percent entry')
-        fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),paper_bgcolor="#4233FF",)
+        fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),paper_bgcolor="#202A44",)
         st.plotly_chart(fig)
     elif select == 'TOTAL NUMBER OF STAFF IN YEAR 2009 BY SECTORS ACCORDING TO THEIR AREA OF SERVICE':
                 st.subheader('TOTAL NUMBER OF STAFF IN YEAR 2009 BY SECTORS ACORDING TO THEIR AREA OF SERVICE')
                 fig = px.sunburst(df, path=['service', 'sector'], values='totalstaff09',width=800, height=500)
                 fig.update_traces(textinfo='label+percent entry')
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                    paper_bgcolor="#4233FF ",)
+                                    paper_bgcolor="#202A44",)
                 st.plotly_chart(fig)
     elif select == 'TOTAL NUMBER OF STAFF IN YEAR 2010 BY SECTORS ACCORDING TO THEIR AREA OF SERVICE':
                 st.subheader('TOTAL NUMBER OF STAFF IN YEAR 2010 BY SECTORS ACCORDING TO THEIR AREA OF SERVICE')
                 fig = px.sunburst(df, path=['service', 'sector'], values='totalstaff10',width=800, height=500,color_continuous_scale='mint')
                 fig.update_traces(textinfo='label+percent entry')
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                    paper_bgcolor="#4233FF ",)
+                                    paper_bgcolor="#202A44",)
                 st.plotly_chart(fig)
     elif select == 'TOTAL AND AVERAGE TURNOVER FOR THE YEAR 2008 FOR EACH SECTOR GROUPED BY THEIR SERVICE':
                 df = df[df['turnover08']!=0]
@@ -41,7 +41,7 @@ def wave2():
                 color_continuous_scale='balance',color_continuous_midpoint=np.mean(df['turnover08']))
                 fig.update_traces(textinfo='label+percent entry') 
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                    paper_bgcolor="#4233FF ",)
+                                    paper_bgcolor="#202A44",)
                 st.plotly_chart(fig)
     elif select == 'TOTAL AND AVERAGE TURNOVER FOR THE YEAR 2009 FOR EACH SECTOR GROUPED BY THEIR SERVICE':
                 df = df[df['turnover09']!=0]
@@ -50,7 +50,7 @@ def wave2():
                 color_continuous_scale='redor',color_continuous_midpoint=np.mean(df['turnover09']))
                 fig.update_traces(textinfo='label+percent entry') 
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                    paper_bgcolor="#4233FF ",)
+                                    paper_bgcolor="#202A44",)
                 st.plotly_chart(fig)
     elif select == 'TOTAL AND AVERAGE TURNOVER FOR THE YEAR 2010 FOR EACH SECTOR GROUPED BY THEIR SERVICE':
                 df = df[df['turnover10']!=0]
@@ -59,7 +59,7 @@ def wave2():
                 color_continuous_scale='rainbow',color_continuous_midpoint=np.mean(df['turnover10']))
                 fig.update_traces(textinfo='label+percent entry') 
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                    paper_bgcolor="#4233FF ",)
+                                    paper_bgcolor="#202A44",)
 
                 st.plotly_chart(fig)
     
