@@ -106,5 +106,5 @@ st.set_page_config(page_title="WAVE1&2", page_icon="📈")
 st.markdown("#EXPLORATORY DATA ANALYSIS")
     
 st.header(
-        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 and wave2 Enjoy!""")
+        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 and wave2""")
 wave1_and_wave2() 
