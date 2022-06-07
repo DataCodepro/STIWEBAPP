@@ -16,19 +16,17 @@ def wave1_and_wave2():
         'SECTORS AND THEIR INFORMATION SOURCE -CONFERENCES, FAIRS, EXHIBITIONS','SECTORS AND THEIR INFORMATION SOURCE -JOURNALS, TRADE PUBLICATIONS',
         'SECTORS AND THEIR INFORMATION SOURCE -PROFESSIONAL, INDUSTRY ASSOCIATIONS'],key=1)
     if select == 'NO OF COMPANY IN EACH SECTOR':
-                col1,col2,col3 = st.columns(3)
+               
                 df2= df['sector'].value_counts()
-                with col1:
-                    st.subheader('VARIOUS SECTOR AND THE TOTAL NUMBER OF INDUSTRIES UNDER EACH SECTORS')
-                    fig = px.bar(x=df2.index,y = df2.values ,labels={'x':'Sector','y':'Outcome'},width=500, height=500)
-                    fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
+                st.table(df2)
+                
+                st.subheader('VARIOUS SECTOR AND THE TOTAL NUMBER OF INDUSTRIES UNDER EACH SECTORS')
+                fig = px.bar(x=df2.index,y = df2.values ,labels={'x':'Sector','y':'Outcome'},width=500, height=500)
+                fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#4233FF ",)
 
-                    st.plotly_chart(fig)
-                with col2:
-                    st.markdown('***')
-                with col3:
-                    st.table(df2)
+                st.plotly_chart(fig)
+          
     elif select == 'PERCENTAGE RATE OF EACH SECTOR':
                 df2= df['sector'].value_counts()
                 st.subheader('PERCENTAGE RATE OF EACH SECTOR')
