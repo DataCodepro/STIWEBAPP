@@ -47,5 +47,5 @@ def wave1comparisim():
 st.set_page_config(page_title="WAVE12008COMPARISIM", page_icon="📈")
 st.markdown("#EXPLORATORY DATA ANALYSIS")
 st.header(
-        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 2008 Enjoy!""")
+        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 2008""")
 wave1comparisim()   
