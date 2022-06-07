@@ -23,7 +23,7 @@ def wave1_and_wave2():
                 st.subheader('VARIOUS SECTOR AND THE TOTAL NUMBER OF INDUSTRIES UNDER EACH SECTORS')
                 fig = px.bar(x=df2.index,y = df2.values ,labels={'x':'Sector','y':'Outcome'},width=800, height=800)
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
-                                            paper_bgcolor="#4233FF ",)
+                                            paper_bgcolor="#202A44 ",)
 
                 st.plotly_chart(fig)
                 st.table(df2)
