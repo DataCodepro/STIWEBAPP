@@ -7,7 +7,7 @@ import plotly.express as px
 def wave2comparisim():
     df = pd.read_csv('cleaneddata2.csv')
     df2 = df[['sector','turnover08','turnover09','turnover10','totalstaff08','totalstaff09','totalstaff10']]
-    select = st.sidebar.selectbox("COMPARISIM ANALYSIS FOR WAVE ONE",['Staff AGAINST TurnOver2008',
+    select = st.sidebar.selectbox("COMPARISIM ANALYSIS FOR WAVE Two",['Staff AGAINST TurnOver2008',
     'Staff AGAINST TurnOver2009','Staff AGAINST TurnOver2010'],key=1)
     if select == 'Staff AGAINST TurnOver2008':
         df2= df2[df2['turnover08']!=0]
