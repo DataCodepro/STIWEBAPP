@@ -18,14 +18,15 @@ def wave1_and_wave2():
     if select == 'NO OF COMPANY IN EACH SECTOR':
                
                 df2= df['sector'].value_counts()
-                st.table(df2)
+                
                 
                 st.subheader('VARIOUS SECTOR AND THE TOTAL NUMBER OF INDUSTRIES UNDER EACH SECTORS')
-                fig = px.bar(x=df2.index,y = df2.values ,labels={'x':'Sector','y':'Outcome'},width=500, height=500)
+                fig = px.bar(x=df2.index,y = df2.values ,labels={'x':'Sector','y':'Outcome'},width=800, height=800)
                 fig.update_layout(margin= dict(l=20, r=20, t=20, b=20),
                                             paper_bgcolor="#4233FF ",)
 
                 st.plotly_chart(fig)
+                st.table(df2)
           
     elif select == 'PERCENTAGE RATE OF EACH SECTOR':
                 df2= df['sector'].value_counts()
