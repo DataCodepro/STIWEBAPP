@@ -66,6 +66,6 @@ def wave1():
 st.set_page_config(page_title="WAVE12008", page_icon="📈")
 st.markdown("#EXPLORATORY DATA ANALYSIS")
 st.header(
-        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 2008 Enjoy!""")
+        """This EXPLORATORY DATA ANALYSIS illustrates a combination of plotting for wave1 2008""")
 wave1()   
 
