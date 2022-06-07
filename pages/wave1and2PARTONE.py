@@ -16,7 +16,7 @@ def wave1_and_wave2():
         'SECTORS AND THEIR INFORMATION SOURCE -CONFERENCES, FAIRS, EXHIBITIONS','SECTORS AND THEIR INFORMATION SOURCE -JOURNALS, TRADE PUBLICATIONS',
         'SECTORS AND THEIR INFORMATION SOURCE -PROFESSIONAL, INDUSTRY ASSOCIATIONS'],key=1)
     if select == 'NO OF COMPANY IN EACH SECTOR':
-                col1,col2 = st.columns(2)
+                col1,col2,col3 = st.columns(3)
                 df2= df['sector'].value_counts()
                 with col1:
                     st.subheader('VARIOUS SECTOR AND THE TOTAL NUMBER OF INDUSTRIES UNDER EACH SECTORS')
@@ -26,6 +26,8 @@ def wave1_and_wave2():
 
                     st.plotly_chart(fig)
                 with col2:
+                    st.markdown('***')
+                with col3:
                     st.table(df2)
     elif select == 'PERCENTAGE RATE OF EACH SECTOR':
                 df2= df['sector'].value_counts()
