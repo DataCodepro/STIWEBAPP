@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 def data_frame_demo():
-   df = pd.read_csv('cleaneddata2')
+   df = pd.read_csv('cleaneddata2.csv')
    return df
 
 st.set_page_config(page_title="DataFrame", page_icon="📊")
