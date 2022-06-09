@@ -9,3 +9,4 @@ st.markdown("# DataFrame")
 st.sidebar.header("DataFrame")
 st.write(
     """This demo shows how to use `st.write` to visualize Pandas DataFrames.""")
+data_frame_demo()
